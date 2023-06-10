@@ -1,0 +1,144 @@
+html {
+  font-family: Montserrat;
+}
+
+header {
+  background: #F1FDFF;
+  
+  background-image: url(./images/medium-shot-woman-holding-ukranian-flag\ 1.png);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 729px;
+  width: 1440px;
+  margin: 0 auto;  
+}
+
+.nav-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  display: inline-block;
+  text-align: right;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.logo {
+  text-align: left;
+}
+
+.header-info {
+margin-top: 73px;
+margin-left: 100px;
+}
+
+h1 {
+  font-size: 93px;
+  font-weight: 800;
+  color: #9AD2DE;
+  text-transform: uppercase;
+  width: 700px;
+  height: 265px;
+  line-height: .95;
+  margin: 0;
+  
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 60px;
+
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 46px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  max-width: 571px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.header-phrase {
+  padding-top: 64px;
+  width: 484px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.nav-list {
+  text-align: right;
+}
+
+.description {
+  text-align: center;
+}
+
+.prize {
+  background-image: url(./images/Фон\ 5.png);
+  background-size: cover;
+  width: 1285px;
+  height: 738px;
+  background-position:top right ;
+ margin: 0 auto;
+  padding-top: 250px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px;
+  align-items:flex-start;
+  background: #f1fdff;
+  margin: 33px;
+}
+
+.event {
+  margin: 45px 0 10px 0;
+}
+
+.time {
+  margin: 0;
+  color: #3d8c9d;
+}
+
+.more-info {
+  display: block;
+  text-decoration: none;
+  margin: 0 auto;
+  background: #7ae5fd;
+  width: 262px;
+}
+
+.contacts {
+  display: block;
+  align-items: flex-start;
+}
+
+button {
+  background: #7ae5fd;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 21px 35px;
+  border: none;
+  border-radius: 87px;
+  display: block;
+  margin: 0 auto;
+}
