@@ -95,6 +95,7 @@ h5 {
 
 .container {
  max-width: 1240px;
+ margin: 0 100px;
 }
 
 .description {
