@@ -1,57 +1,83 @@
-html {
-  font-family: Montserrat;
+* {
+  box-sizing: border-box;
 }
-
 body {
-  max-width: 1440px;
-  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin: 0;
+}
 
-
-header {
-  background: #F1FDFF;
-  
-  background-image: url(./images/medium-shot-woman-holding-ukranian-flag\ 1.png);
-  /* background-size: cover; */
+.header-container {
+  margin: 0 auto;
+  background: #f1fdff
+    url('./images/medium-shot-woman-holding-ukranian-flag\ 1.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right top;
-  height: 729px;
-  width: 1440px;
-  margin: 0 auto;  
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
 }
 
 .nav-panel {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  padding: 63px 100px;
 }
 
 li {
   display: inline-block;
   text-align: right;
   font-size: 18px;
+  
   padding: 12px;
 }
 
+
+a {
+  text-decoration: none;
+}
+
+.blue-button {
+  background: #7ae5fd;
+  border-radius: 87px;
+  padding: 10px 20px;
+}
+
 .logo {
-  text-align: left;
+ 
+  width: 65px;
+    height: 64px;
+
 }
 
 .header-info {
-margin-top: 73px;
-margin-left: 100px;
+  padding: 4.5% 6% 10% 7%;
 }
 
 h1 {
   font-size: 93px;
   font-weight: 800;
-  color: #9AD2DE;
+  color: #9ad2de;
   text-transform: uppercase;
-  width: 700px;
-  height: 265px;
-  line-height: .95;
+  max-width: 700px;
+  max-height: 265px;
+  line-height: 0.95;
   margin: 0;
-  
 }
 
 h2 {
@@ -94,8 +120,8 @@ h5 {
 }
 
 .container {
- max-width: 1240px;
- margin: 0 100px;
+  max-width: 1240px;
+  margin: 0 100px;
 }
 
 .description {
@@ -103,12 +129,12 @@ h5 {
 }
 
 .prize {
-  background-image: url(./images/Фон\ 5.png);
+  background-image: url(./images/Фон5.png);
   background-size: cover;
-  width: 1285px;
-  height: 738px;
-  background-position:top right ;
- margin: 0 auto;
+  max-width: 1285px;
+  max-height: 738px;
+  background-position: top right;
+  margin: 0 auto;
   padding-top: 250px;
 }
 
@@ -117,9 +143,15 @@ h5 {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 40px;
-  align-items:flex-start;
+  align-items: center;
   background: #f1fdff;
   margin: 33px;
+  max-width: 100%;
+}
+
+.program-image,
+.program {
+  flex: 1 1 40%;
 }
 
 .event {
@@ -136,7 +168,7 @@ h5 {
   text-decoration: none;
   margin: 0 auto;
   background: #7ae5fd;
-  width: 262px;
+  max-width: 262px;
 }
 
 .contacts {
@@ -153,4 +185,40 @@ button {
   border-radius: 87px;
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    max-width: none;
+  }
+  h1 {
+    font-size: 50px;
+  }
 }
