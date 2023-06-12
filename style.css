@@ -2,6 +2,13 @@ html {
   font-family: Montserrat;
 }
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
 header {
   background: #F1FDFF;
   
@@ -84,6 +91,10 @@ h5 {
 
 .nav-list {
   text-align: right;
+}
+
+.container {
+ max-width: 1240px;
 }
 
 .description {
