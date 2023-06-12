@@ -30,6 +30,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: auto;
+  
 }
 
 .nav-panel {
@@ -37,6 +38,8 @@ body {
   justify-content: space-between;
   flex-direction: row;
   padding: 63px 100px;
+  align-items: center;
+  
 }
 
 li {
@@ -78,6 +81,7 @@ h1 {
   max-height: 265px;
   line-height: 0.95;
   margin: 0;
+  
 }
 
 h2 {
@@ -221,4 +225,74 @@ button {
   h1 {
     font-size: 50px;
   }
+}
+
+.registration-form {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 8.1% auto 0;
+    padding-top: 5%;
+}
+.mail-photo {
+    width: 41%;
+}
+.right-box {
+    width:41%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7.7%;
+    margin-bottom: 4.4%;
+}
+.right-box-text {
+    text-align: justify;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.form-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 66px;
+    padding: 21px 0 21px 43px;
+    background: #F9FADF;
+    border-radius: 61px;
+    border: none;
+    outline:none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.form-button {
+    height: 66px;
+    padding: 10px;
+    background: #7AE5FD;
+    border-radius: 61px;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000
 }
