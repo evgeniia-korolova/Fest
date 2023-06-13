@@ -2,21 +2,13 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  align-items: center;
+  font-family: 'Montserrat', sans-serif;  
   width: 100vw;
   height: 100%;
+  
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  margin: 0;
-}
+
 
 .header-container {
   margin: 0 auto;
@@ -30,6 +22,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .nav-panel {
@@ -117,18 +110,17 @@ h5 {
   text-align: right;
 }
 
-.container {
+.program-container {
   max-width: 1240px;
-  margin: 0 100px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .description {
   text-align: center;
 }
 
-.prize {
-  
-}
+
 
 .row {
   display: flex;
@@ -137,7 +129,7 @@ h5 {
   padding: 40px;
   align-items: center;
   background: #f1fdff;
-  margin: 33px;
+  margin-top: 70px;
   max-width: 100%;
 }
 
@@ -148,11 +140,13 @@ h5 {
 
 .event {
   margin: 45px 0 10px 0;
+  font-size: 16px;
 }
 
 .time {
   margin: 0;
   color: #3d8c9d;
+  font-size: 16px;
 }
 
 .more-info {
@@ -163,9 +157,26 @@ h5 {
   max-width: 262px;
 }
 
-.contacts {
+.dash {
+  color: #9AD2DE;
+  font-weight:100;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px;
+  align-items: center;
+  background: #f1fdff;
+  margin: 33px;
+  max-width: 100%;
+}
+
+.contacts-container li{
   display: block;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-self: flex-start;
 }
 
 button {
@@ -179,54 +190,18 @@ button {
   margin: 0 auto;
 }
 
-@media (max-width: 1440px) {
-  .container {
-    max-width: 1240px;
-  }
-}
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
-  h1 {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 390px) {
-  .container {
-    max-width: none;
-  }
-  h1 {
-    font-size: 50px;
-  }
-}
-
-.gift {
-  overflow: hidden;
+.gift-container {
+  max-width: 1240px; 
   height: auto;
   display: flex;
   flex-direction: row;
   background:  url("./images/Фон5.png") no-repeat top left;
   background-size: cover;
- width: 100%;
- 
-  background-position: top right;
+ box-sizing: border-box;
+  position: relative;
   margin: 0 auto;
-  padding-top: 250px;
+  padding: 250px 0;
   margin-bottom: 68px;
   
 }
@@ -235,27 +210,28 @@ button {
   width: 100%;
   background:#F2FEFF;
   border-radius: 10px;
-  display: flex;
-    align-items: center;
-
+  padding: 89px 40px;
 }
 .gift-text p {
-  width: 100%;
+  
   text-align: left;
   margin-left: 40px;
     width: 40%;
     font-size: 27px;
-    line-height: 120%;
+    line-height: 1.2;
     
 
 }
 
 .gift-photo {
-  background:#F2FEFF;
-      width: 35%;
+  position: absolute;
+      width: 31%;
     top: 25.2%;
     right: 9.2%;
+}
 
+.aim {
+  text-align: center;
 }
 
 .registration-form {
@@ -270,6 +246,7 @@ button {
   flex-wrap: wrap;
   margin: 8.1% auto 0;
   padding-top: 5%;
+  overflow: hidden;
 }
 .mail-photo {
   width: 41%;
@@ -326,4 +303,41 @@ button {
   line-height: 120%;
   text-transform: uppercase;
   color: #000000;
+}
+
+
+@media (max-width: 1440px) {
+  .program-container {
+    max-width: 1240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .program-container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .program-container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .program-container {
+    max-width: none;
+  }
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 390px) {
+  .program-container {
+    max-width: none;
+  }
+  h1 {
+    font-size: 50px;
+  }
 }
