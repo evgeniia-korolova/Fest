@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  
 }
 
 .nav-panel {
@@ -28,14 +29,16 @@ body {
   flex-direction: row;
   padding: 63px 100px;
   align-items: center;
+  list-style: none;
 }
 
-li {
-  display: inline-block;
-  text-align: right;
+li {  
   font-size: 18px;
-
   padding: 12px;
+}
+
+.right-position {
+  margin-left: auto;
 }
 
 a {
@@ -105,7 +108,7 @@ h5 {
 }
 
 .nav-list {
-  text-align: right;
+  display: flex;
 }
 
 .program-container {
@@ -213,15 +216,15 @@ button {
 }
 
 .gift-container {
-  max-width: 1240px;
-  height: auto;
+  max-width: 100%;
+  
   display: flex;
   flex-direction: row;
   background: url('./images/Фон5.png') no-repeat top left;
   background-size: cover;
   box-sizing: border-box;
   position: relative;
-  margin: 0 auto;
+  margin: 5%;
   padding: 250px 0;
   margin-bottom: 68px;
 }
